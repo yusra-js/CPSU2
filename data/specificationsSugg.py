@@ -1,3 +1,4 @@
+
 def calculate_gpa(high_school_grade, cognitive_test_grade, achievement_test_grade):
     # Weights for each component
     high_school_weight = 0.4
@@ -5,11 +6,14 @@ def calculate_gpa(high_school_grade, cognitive_test_grade, achievement_test_grad
     achievement_test_weight = 0.3
 
     # Calculate weighted average
-    weighted_average = (high_school_grade * high_school_weight) + \
-                       (cognitive_test_grade * cognitive_test_weight) + \
-                       (achievement_test_grade * achievement_test_weight)
-    
+    weighted_average = (
+        (high_school_grade * high_school_weight)
+        + (cognitive_test_grade * cognitive_test_weight)
+        + (achievement_test_grade * achievement_test_weight)
+    )
+
     return weighted_average
+
 
 def suggested_specifications(gpa):
     specifications = {
@@ -17,7 +21,7 @@ def suggested_specifications(gpa):
         "Manager": 75,
         "Medicine and Surgery": 98.6,
         "Designing": 73,
-        "AI": 78
+        "AI": 78,
     }
 
     # Filter specifications based on GPA
@@ -27,6 +31,7 @@ def suggested_specifications(gpa):
     sorted_suggested = sorted(suggested.items(), key=lambda x: x[1], reverse=True)
 
     return sorted_suggested
+
 
 def main():
     # Get user input for grades
@@ -48,6 +53,7 @@ def main():
             print(f"{spec}: {grade}%")
     else:
         print("Sorry, your GPA does not meet the criteria for any specification.")
+
 
 if __name__ == "__main__":
     main()
