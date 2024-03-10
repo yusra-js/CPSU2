@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>الجدول الزمني</title>
 
       <!-- Basic -->
@@ -110,6 +112,19 @@
         th {
             background-color: #f2f2f2;
         }
+
+        body {
+            font-size: 16px;
+        }
+
+        .responsive-container {
+            width: 100%;
+        }
+
+
+        .your-element {
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -119,16 +134,11 @@
         <img class="preloader" src="images/loader.gif" alt="">
     </div><!-- end loader -->
 
+    <div class="responsive-container">
         <header class="header header-normal">
             <div class="container">
                 <nav class="navbar navbar-default yamm">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
                         <div class="logo-normal">
                             <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" width="100" height="50"></a>
                         </div>
@@ -140,7 +150,6 @@
                             <li><a href="uni.html">الجامعات المتاحة</a></li> 
                             <li><a href="Timetable.html">الجدول الزمني</a></li>
                             <li><a href="blog-single.html"> الإحصائيات</a></li> <!-- aad page -->
-                            <li><a href="page-contact.html">توصل معنا </a></li>
                             <li class="iconitem"><a href="#" data-toggle="modal" data-target="#login-modal"><i class="fa fa-search"></i></a></li>
                         </ul>
                     </div>
@@ -154,6 +163,7 @@
         <div
             style="left: 559px; top: 100px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Inter; font-weight: 400; word-wrap: break-word">الجدول الزمني</div>
         <!-- table -->
+        <div style="width: 1530px; height: 1550px; position:static; background: white">
         <table>
             <thead>
                 <tr>
@@ -350,9 +360,26 @@
                 </tr>
             </tbody>
         </table>
-
+    </div>
+</div>
         <!------------------------->
 
+        <footer class="copyrights">
+            <div class="container">
+                <div class="clearfix">
+                    <div class="pull-left">
+                        <div class="cop-logo">
+                            <ul class="social-media" style="display: flex; list-style: none; position: relative; justify-content: flex-end; padding-right: 10vw;">
+                                <li><a href="#"><img src="icon/X.png" alt="Twitter" width="40vw" height="40vw"></a></li>
+                                <li><a href="#"><img src="icon/email-256.png" alt="email" width="30vw" height="30vw"></a></li>
+                            </ul>
+                            <a href="#"><img src="images/logo.png" alt="" width="80vw" height="40vw"></a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+            </footer>
+            
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/animate.js"></script>
