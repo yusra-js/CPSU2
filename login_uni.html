@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ar"> <!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Meta -->
+    <title>CPSU</title>
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Custom & Default Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        // Get a reference to the button element
+        var button = document.getElementById("enter_button");
+        // Add an event listener to the button
+        button.addEventListener("click", function () {
+            // Perform your desired action here
+            alert("Button clicked!");
+        });
+
+        function redirectToPage() {
+            // Get the selected value from the dropdown
+            var selectedUser = document.getElementById("user1").value;
+
+            // Define the URLs for each option
+            var pageURLs = {
+                student: "login_student.html",
+                university: "login_uni.html",
+            };
+            // Redirect to the selected page
+            window.location.href = pageURLs[selectedUser];
+        }
+    </script>
+
+<style>
+    ::placeholder {
+        width: 10%; /* Use percentage for width */
+        height: 1.5em; /* Use em units for height */
+        opacity: 0.50;
+        text-align: right;
+        color: #0E0E0F;
+        font-size: 1em; /* Use em units for font size */
+        font-family: Montserrat;
+        font-weight: 300;
+        word-wrap: break-word;
+    }
+
+    option[name="select_option"] {
+        left: 50%; /* Use percentage for left positioning */
+        top: 15%; /* Use percentage for top positioning */
+        position: absolute;
+        text-align: right;
+        color: black;
+        font-size: 1em; /* Use em units for font size */
+        font-family: Montserrat;
+        font-weight: 600;
+        word-wrap: break-word;
+    }
+
+    body {
+        font-size: 1em; /* Use em units for font size */
+    }
+
+    .responsive-container {
+        width: 100%;
+    }
+
+    .your-element {
+        width: 100%;
+    }
+</style>
+</head>
+
+<body>
+    <div class="responsive-container">
+    <!-- LOADER -->
+    <div id="preloader">
+        <img class="preloader" src="images/loader.gif" alt="">
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+
+    <div id="wrapper">
+        <!-- BEGIN # MODAL LOGIN -->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Begin # DIV Form -->
+                    <div id="div-forms">
+                        <form id="login-form">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="flaticon-add" aria-hidden="true"></span>
+                            </button>
+                            <div class="modal-body">
+                                <input class="form-control" type="text" placeholder="What you are looking for?"
+                                    required>
+                            </div>
+                        </form><!-- End # Login Form -->
+                    </div><!-- End # DIV Form -->
+                </div>
+            </div>
+        </div>
+        <!-- END # MODAL LOGIN -->
+
+        <header class="header header-normal">
+            <div class="container">
+                <nav class="navbar navbar-default yamm">
+                    <div class="logo-normal">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" width="100"
+                                height="50"></a>
+                    </div>
+
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">الصفحة الرئيسة</a></li>
+                            <li><a href="uni.html">الجامعات المتاحة</a></li>
+                            <li><a href="Timetable.html">الجدول الزمني</a></li>
+                            <li><a href="blog-single.html"> الإحصائيات</a></li> <!-- aad page -->
+                            <li class="iconitem"><a href="#" data-toggle="modal" data-target="#login-modal"><i
+                                        class="fa fa-search"></i></a></li>
+                    </div>
+                </nav><!-- end navbar -->
+            </div><!-- end container -->
+            </nav><!-- end navbar -->
+    </div><!-- end container -->
+    </header>
+    <section class="section gb nopadtop">
+        <div style="width:1520px; height: 700px; position: relative;">
+            <form class="university-form">
+        
+                <div style="width: 1280px; height: 832px; left: 23px; top: 0px; position: absolute">
+                    <!--المربع الاخضر يلي في المنتصف -->
+                    <div
+                        style="width: 549px; height: 512px; left: 450px; top: 100px; position: absolute; opacity: 0.50; background: rgba(149, 187, 177, 0.50); border-radius: 27px; border: 3px black solid; backdrop-filter: blur(60px)">
+                    </div>
+                    <!-- كلمة يلي بداية الفورم -->
+                    <div
+                        style="width: 431px; height: 35px; left: 530px; top: 120px; position: absolute; text-align: right; color: black; font-size: 40px; font-family: Iceland; font-weight: 400; word-wrap: break-word">
+                        تسجيل الدخول </div>
+    
+                    <!-- الخط الاسود -->
+                    <div
+                        style="width: 180px; height: 0px; left: 788px; top: 170px; position: absolute; border: 1px black solid">
+                    </div>
+
+                <!-- مربع الطالب / الجامع-->
+                <div
+                    style="width: 141px; height: 35px; left: 825px; top: 200px; position: absolute; background: rgba(149, 187, 177, 0.50); border-radius: 20px">
+                    <select id="user1" name="user-type"onchange=" redirectToPage()"
+                        style="width: 100%; height: 100%; border: none; background: transparent;">
+                        <option name="select_option" value="student" href="login_student.html">طالب</option>
+                        <option name="select_option" value="university" selected>جامعة</option>
+                    </select>
+                </div>
+                 <!--مربع الاخضر حق لاسم المستخدم / الهوية-->
+                 <div>
+                    <form action="/logIn_1.py" method="post">
+                    <select name="uni-name" id="uni_name" required
+                        style="width: 431px; height: 45px; left: 510px; top: 280px; position: absolute; opacity: 0.50; background: white; border-radius: 7px; border: 1px white solid; backdrop-filter: blur(60px)">
+                        <option value="" disabled selected> الجامعة</option>
+                        <option value="uni1">جامعة أم القرى</option>
+                        <option value="uni2">الجامعة الإسلامية</option>
+                        <option value="uni3">جامعة الإمام محمد بن سعود الإسلامية</option>
+                        <option value="uni4">جامعة الملك سعود</option>
+                        <option value="uni5">جامعة الملك عبدالعزيز</option>
+                        <option value="uni6">جامعة الملك فهد للبترول والمعادن</option>
+                        <option value="uni7">جامعة الملك فيصل</option>
+                        <option value="uni8">جامعة الملك خالد</option>
+                        <option value="uni9">جامعة القصيم</option>
+                        <option value="uni10">جامعة طيبة</option>
+                        <option value="uni11">جامعة الطائف</option>
+                        <option value="uni12">جامعة حائل</option>
+                        <option value="uni13">جامعة جازان</option>
+                        <option value="uni14">جامعة الجوف</option>
+                        <option value="uni15">جامعة الباحة</option>
+                        <option value="uni16">جامعة تبوك</option>
+                        <option value="uni17">جامعة نجران</option>
+                        <option value="uni18">جامعة الحدود الشمالية</option>
+                        <option value="uni19">جامعة الأميرة نورة بنت عبدالرحمن</option>
+                        <option value="uni20">
+                            جامعة الملك سعود بن عبدالعزيز للعلوم الصحية
+                        </option>
+                        <option value="uni21">جامعة الإمام عبدالرحمن بن فيصل</option>
+                        <option value="uni22">جامعة الأمير سطام بن عبدالعزيز</option>
+                        <option value="uni23">جامعة شقراء</option>
+                        <option value="uni24">جامعة المجمعة</option>
+                        <option value="uni25">الجامعة السعودية الإلكترونية</option>
+                        <option value="uni26">جامعة جدة</option>
+                        <option value="uni27">جامعة بيشة</option>
+                        <option value="uni28">جامعة الملك عبدالله للعلوم والتقنية</option>
+                        <option value="uni29">جامعة حفر الباطن</option>
+                    </select>
+                </div>
+
+                <!--مربع الاخضر حق كلمة السر -->
+                <div>
+                    <input type="password" id="password" name="password" required placeholder="كلمة السر " style="width: 431px;
+                height: 45px; left: 510px; top: 350px; position: absolute; opacity: 0.50; background: white;
+                border-radius: 7px; border: 1px white solid; backdrop-filter: blur(60px)"></input>
+                </div>
+
+                 <!--مربع الاخضر حق الرمز   -->
+                 <div>
+                    <input type="text" id="text2" name="text2" required placeholder="الرمز " style="width: 431px;
+                height: 45px; left: 510px; top: 420px; position: absolute; opacity: 0.50; background: white;
+                border-radius: 7px; border: 1px white solid; backdrop-filter: blur(60px)"></input>
+                </div>
+                
+                <!-- Button (زر الاخضر حق الدخول) -->
+                <button id="enter_button"
+                    style="width: 431px; height: 45px; left: 510px; top: 500px; position: absolute; background: #A5D9D0; border-radius: 7px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                    <span
+                        style="color: black; font-size: 15px; font-family: 'Montserrat', sans-serif; font-weight: 600;">دخول</span>
+                </div>
+       </form>    
+     </div>
+     </div>
+ </section>
+      <!------------------------------------------------->
+  
+      <footer class="copyrights">
+        <div class="container">
+            <div class="clearfix">
+                <div class="pull-left">
+                    <div class="cop-logo">
+                        <ul class="social-media" style="display: flex; list-style: none; position: relative; justify-content: flex-end; padding-right: 10vw;">
+                            <li><a href="#"><img src="icon/X.png" alt="Twitter" width="40vw" height="40vw"></a></li>
+                            <li><a href="#"><img src="icon/email-256.png" alt="email" width="30vw" height="30vw"></a></li>
+                        </ul>
+                        <a href="#"><img src="images/logo.png" alt="" width="80vw" height="40vw"></a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end container -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

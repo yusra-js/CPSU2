@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الجدول الزمني</title>
+
+      <!-- Basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+      <!-- Mobile Meta -->
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      
+      <!-- Site Meta -->
+      <title>CPSU</title>
+      
+      <!-- Site Icons -->
+      <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  
+      <!-- Custom & Default Styles -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .bar {
+            top: 30px;
+            position: absolute;
+            text-align: center;
+            color: black;
+            font-size: 16px;
+            font-family: Inter;
+            font-weight: 400;
+            word-wrap: break-word;
+            text-decoration: none;
+        }
+
+
+        #search-bar {
+            width: 165px;
+            height: 27px;
+            position: absolute;
+            top: 25px;
+            left: 316px;
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid #ccc;
+            border-radius: 20px;
+
+        }
+
+        #search-button {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 30px;
+            left: 453px;
+            background-color: rgba(149, 187, 177, 0.50);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+            position: absolute;
+            background: #269293;
+            border: 1px solid #269293;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-family: Inter;
+            font-weight: 390;
+            word-wrap: break-word;
+            color: #fff;
+            width: 130px;
+            height: 31px;
+            top: 25px;
+        }
+
+        #login-button {
+            left: 30px;
+        }
+
+        #signUp-button {
+            left: 171px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            left: 70px;
+            top: 150px;
+            position: absolute;
+            text-align: center;
+            color: black;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- LOADER -->
+    <div id="preloader">
+        <img class="preloader" src="images/loader.gif" alt="">
+    </div><!-- end loader -->
+
+        <header class="header header-normal">
+            <div class="container">
+                <nav class="navbar navbar-default yamm">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="logo-normal">
+                            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" width="100" height="50"></a>
+                        </div>
+                    </div>
+
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">الصفحة الرئيسة</a></li>
+                            <li><a href="all_unis1.html">الجامعات المتاحة</a></li> 
+                            <li><a href="Time_Table.html">الجدول الزمني</a></li>
+                            <li><a href="statistics.html"> الإحصائيات</a></li> <!-- aad page -->
+                            <li class="iconitem"><a href="#" data-toggle="modal" data-target="#login-modal"><i class="fa fa-search"></i></a></li>
+                        </ul>
+                    </div>
+                </nav><!-- end navbar -->
+            </div><!-- end container -->
+                </nav><!-- end navbar -->
+            </div><!-- end container -->
+        </header>
+
+        <!-- النص يلي في منتصف الصفحة-->
+        <div
+            style="left: 559px; top: 100px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Inter; font-weight: 400; word-wrap: break-word">الجدول الزمني</div>
+        <!-- table -->
+        <table><table>
+            <thead>
+                <tr>
+                    <th>الجامعة </th>
+                    <th>اليوم </th>
+                    <th>التاريخ الهجري </th>
+                    <th>التاريخ ميلادي </th>
+                    <th>روابط التسجيل</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>جامعة طيبة</td>
+                    <td>الأحد</td>
+                    <td>1446-01-01</td>
+                    <td>2024-07-07</td>
+                    <td>https://www.taibahu.edu.sa/Pages/AR/Home.aspx</td>
+                </tr>
+                <tr>
+                    <td>جامعة القصيم</td>
+                    <td>الاثنين</td>
+                    <td>1446-01-02</td>
+                    <td>2024-07-08</td>
+                    <td>https://www.qu.edu.sa</td>
+                </tr>
+                <tr>
+                    <td>جامعة الملك خالد</td>
+                    <td>الثلاثاء</td>
+                    <td>1446-01-03</td>
+                    <td>2024-07-09</td>
+                    <td>https://www.kku.edu.sa/ar</td>
+                </tr>
+                <tr>
+                    <td>جامعة الملك فيصل</td>
+                    <td>الأربعاء</td>
+                    <td>1446-01-04</td>
+                    <td>2024-07-10</td>
+                    <td>https://www.kfu.edu.sa/ar/pages/home.aspx</td>
+                </tr>
+                <tr>
+                    <td>جامعة الملك فهد للبترول والمعادن</td>
+                    <td>الخميس</td>
+                    <td>1446-01-05</td>
+                    <td>2024-07-11</td>
+                    <td>https://www.kfupm.edu.sa</td>
+                </tr>
+                <tr>
+                    <td>جامعة الملك عبدالعزيز</td>
+                    <td>الجمعة</td>
+                    <td>1446-01-06</td>
+                    <td>2024-07-12</td>
+                    <td>https://www.kau.edu.sa/Home.aspx</td>
+                </tr>
+                <tr>
+                    <td>جامعة الملك سعود</td>
+                    <td>الأحد</td>
+                    <td>1446-01-07</td>
+                    <td>2024-07-13</td>
+                    <td>https://ksu.edu.sa</td>
+                </tr>
+                <tr>
+                    <td>جامعة الإمام محمد بن سعود الإسلامية</td>
+                    <td>الاثنين</td>
+                    <td>1446-01-08</td>
+                    <td>2024-07-14</td>
+                    <td>https://imamu.edu.sa/Pages/default.aspx</td>
+                </tr>
+                <tr>
+                    <td>الجامعة الإسلامية</td>
+                    <td>الثلاثاء</td>
+                    <td>1446-01-09</td>
+                    <td>2024-07-15</td>
+                    <td>https://iu.edu.sa</td>
+                </tr>
+                <tr>
+                    <td>جامعة أم القرى</td>
+                    <td>الأربعاء</td>
+                    <td>1446-01-10</td>
+                    <td>2024-07-16</td>
+                    <td>https://uqu.edu.sa</td>
+                </tr>
+                <tr>
+                    <td>جامعة الطائف</td>
+                    <td>الخميس</td>
+                    <td>1446-01-11</td>
+                    <td>2024-07-17</td>
+                    <td>https://edugate.tu.edu.sa/tu/init</td>
+                </tr>
+                <tr>
+                    <td>جامعة حائل</td>
+                    <td>الجمعة</td>
+                    <td>1446-01-12</td>
+                    <td>2024-07-18</td>
+                    <td>https://www.uoh.edu.sa/Ar/Pages/Home.aspx</td>
+                </tr>
+                <tr>
+                    <td>جامعة جازان</td>
+                    <td>الأحد</td>
+                    <td>1446-01-13</td>
+                    <td>2024-07-19</td>
+                    <td>https://www.jazanu.edu.sa/ar</td>
+                </tr>
+                <tr>
+                    <td>جامعة الجوف</td>
+                    <td>الاثنين</td>
+                    <td>1446-01-14</td>
+                    <td>2024-07-20</td>
+                    <td>https://www.ju.edu.sa/الرئيسية/</td>
+                </tr>
+                <tr>
+                    <td>جامعة الباحة</td>
+                    <td>الثلاثاء</td>
+                    <td>1446-01-15</td>
+                    <td>2024-07-21</td>
+                    <td>https://bu.edu.sa/en/home</td>
+                </tr>
+                <tr>
+                    <td>جامعة تبوك</td>
+                    <td>الأربعاء</td>
+                    <td>1446-01-16</td>
+                    <td>2024-07-22</td>
+                    <td>https://www.ut.edu.sa/ar/Pages/default.aspx</td>
+                </tr>
+                <tr>
+                    <td>جامعة نجران</td>
+                    <td>الخميس</td>
+                    <td>1446-01-17</td>
+                    <td>2024-07-23</td>
+                    <td>https://www.nu.edu.sa/gui/default.aspx</td>
+                </tr>
+                <tr>
+                    <td>جامعة الحدود الشمالية</td>
+                    <td>الجمعة</td>
+                    <td>1446-01-18</td>
+                    <td>2024-07-24</td>
+                    <td>https://www.nbu.edu.sa</td>
+                </tr>
+                <tr>
+                    <td>جامعة الأميرة نورة بنت عبدالرحمان</td>
+                    <td>الأحد</td>
+                    <td>1446-01-19</td>
+                    <td>2024-07-25</td>
+                    <td>https://www.pnu.edu.sa/ar/Pages/home.aspx</td>
+                </tr>
+                <tr>
+                    <td>جامعة الملك سعود بن عبدالعزيز للعلوم الصحية</td>
+                    <td>الاثنين</td>
+                    <td>1446-01-20</td>
+                    <td>2024-07-26</td>
+                    <td>https://www.ksau-hs.edu.sa/Arabic/Pages/default.aspx</td>
+                </tr>
+                <tr>
+                    <td>جامعة الإمام عبدالرحمان بن فيصل</td>
+                    <td>الثلاثاء</td>
+                    <td>1446-01-21</td>
+                    <td>2024-07-27</td>
+                    <td>https://www.iau.edu.sa/ar</td>
+                </tr>
+                <tr>
+                    <td>جامعة الأمير سطام بن عبدالعزيز</td>
+                    <td>الأربعاء</td>
+                    <td>1446-01-22</td>
+                    <td>2024-07-28</td>
+                    <td>https://www.psau.edu.sa</td>
+                </tr>
+                <tr>
+                    <td>جامعة شقراء</td>
+                    <td>الخميس</td>
+                    <td>1446-01-23</td>
+                    <td>2024-07-29</td>
+                    <td>https://www.su.edu.sa/ar</td>
+                </tr>
+                <tr>
+                    <td>جامعة المجمعة</td>
+                    <td>الجمعة</td>
+                    <td>1446-01-24</td>
+                    <td>2024-07-30</td>
+                    <td>https://www.mu.edu.sa/ar</td>
+                </tr>
+                <tr>
+                    <td>الجامعة السعودية الإلكترونية</td>
+                    <td>الأحد</td>
+                    <td>1446-01-25</td>
+                    <td>2024-07-31</td>
+                    <td>https://seu.edu.sa</td>
+                </tr>
+                <tr>
+                    <td>جامعة جدة</td>
+                    <td>الاثنين</td>
+                    <td>1446-01-26</td>
+                    <td>2024-08-01</td>
+                    <td>https://www.ub.edu.sa/SitePages/Home.aspx</td>
+                </tr>
+                <tr>
+                    <td>جامعة بيشة</td>
+                    <td>الثلاثاء</td>
+                    <td>1446-01-27</td>
+                    <td>2024-08-02</td>
+                    <td>https://www.ub.edu.sa/SitePages/Home.aspx</td>
+                </tr>
+                <tr>
+                    <td>جامعة الملك عبدالله للعلوم والتقنية</td>
+                    <td>الأربعاء</td>
+                    <td>1446-01-28</td>
+                    <td>2024-08-03</td>
+                    <td>https://www.kaust.edu.sa/ar</td>
+                </tr>
+                <tr>
+                    <td>جامعة حفر الباطن</td>
+                    <td>الخميس</td>
+                    <td>1446-01-29</td>
+                    <td>2024-08-04</td>
+                    <td>https://www.uhb.edu.sa/Pages/Home.aspx</td>
+                </tr>
+            </tbody>
+        </table>
+            
+           
+        <!------------------------->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
+
